@@ -1,0 +1,235 @@
+/* ==========================
+   Bizine Workspace Dashboard
+========================== */
+
+
+body {
+
+    margin:0;
+
+    font-family:"Vazirmatn",Tahoma,sans-serif;
+
+    background:#f1f5f9;
+
+}
+
+
+
+/* Layout */
+
+.dashboard {
+
+
+    display:flex;
+
+    min-height:100vh;
+
+
+}
+
+
+
+/* Sidebar */
+
+.sidebar {
+
+
+    width:260px;
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:30px;
+
+
+}
+
+
+
+.sidebar h2 {
+
+
+    margin-bottom:40px;
+
+}
+
+
+
+.sidebar ul {
+
+
+    list-style:none;
+
+    padding:0;
+
+
+}
+
+
+
+.sidebar li {
+
+
+    padding:14px 10px;
+
+    margin-bottom:10px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+
+
+.sidebar li:hover {
+
+
+    background:#1e293b;
+
+}
+
+
+
+
+/* Main */
+
+
+.main {
+
+
+    flex:1;
+
+    padding:40px;
+
+
+}
+
+
+
+
+.header {
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+
+}
+
+
+
+.header h1 {
+
+
+    margin:0;
+
+}
+
+
+
+
+/* Cards */
+
+
+.workspace-grid {
+
+
+    margin-top:40px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:25px;
+
+
+}
+
+
+
+
+.tool-card {
+
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+
+    box-shadow:
+
+    0 8px 25px rgba(0,0,0,.05);
+
+
+    cursor:pointer;
+
+    transition:.3s;
+
+
+}
+
+
+
+.tool-card:hover {
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+.tool-card h3 {
+
+
+    color:#1e40af;
+
+}
+
+
+
+/* Responsive */
+
+
+@media(max-width:900px){
+
+
+.dashboard {
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.sidebar {
+
+
+    width:auto;
+
+}
+
+
+
+.workspace-grid {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+}
